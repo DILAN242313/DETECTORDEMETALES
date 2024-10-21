@@ -1,0 +1,77 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="shortcut icon" href="images/favicon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>TÉRMINOS Y CONDICIONES</title>
+   
+</head>
+<body>
+
+  
+    <div class="navbar">
+        <a href="./index.html">Inicio</a>
+        <a href="./Portafolio.html">Portafolio</a>
+        <a href="./terminosycondiciones.html">Términos y Condiciones</a>
+        <a href="./Manual.html">Manual De Ayuda</a>
+        <a href="./Contacto.html">Contacto</a>
+    </div>
+    <div class="info-container">
+        
+        <h1> TÉRMINOS Y CONDICIONES </h1> 
+
+            <h3> DESCRIPCIÓN</h3> 
+            <p> El Prototipo está diseñado para detectar metales medibles durante misiones de exploración espacial, con el propósito de identificar recursos metálicos en cuerpos celestes como planetas, lunas o asteroides. Este Prototipo es experimental y puede estar sujeto a cambios sin previo aviso.
+            </p>
+    
+            <H2>LIMITACIONES DE USO</H2>
+            <p><li>El Prototipo solo debe ser utilizado para fines científicos y de exploración en entornos espaciales o simulaciones relacionadas</li></p>
+            <p><li>El usuario no puede modificar, alterar o realizar ingeniería inversa en el prototipo sin autorización expresa del desarrollador</li></p>
+            <p><li>El uso del Prototipo está limitado a usuarios previamente autorizados por la entidad que provee el dispositivo, y deberá respetar las normativas de seguridad y protocolo establecidas para la exploración espacial </li></p>
+              
+            <h2>RIESGOS Y ADVERTENCIAS</h2>
+            <P>
+                Este Prototipo es experimental, lo que significa que podría no funcionar siempre como se espera. Podría tener fallos técnicos o no ser completamente preciso. No nos hacemos responsables de ningún daño que ocurra por su uso, como pérdidas de datos o problemas en la misión
+            </P>
+
+            <H2>RESPONSABILIDAD DEL USUARIO </H2>
+            <P><li>Debes usar el Prototipo de acuerdo con las instrucciones que te proporcionamos y no hacerlo funcionar fuera de los límites establecidos</P>
+            <P><li>Si algo sale mal o el Prototipo se daña, es tu responsabilidad informarnos de inmediato</P>
+            <P><li>Si causas daños al Prototipo o afecta a la misión debido a un mal uso, tendrás que asumir las consecuencias.</P>
+        
+         <H2>PRIVACIDAD DE LOS DATOS</H2>
+         <P>Toda la información recopilada por el prototipo, así como los datos relacionados con los metales detectados, son propiedad de la entidad que financia o gestiona la misión de exploración. El usuario no puede divulgar, compartir o comercializar los datos obtenidos sin autorización previa</P>
+        
+        <h2>LIMITACIÓN DE RESPONSABILIDAD</h2>
+        <P>Nosotros no somos responsables por:</P>
+
+        <P><li>Daños directos o indirectos causados por el uso del Prototipo</li></P>
+        <P><li>Pérdidas de datos, interrupciones en la misión, o cualquier otro daño que pueda resultar de su uso</li></P>
+         
+        <H2>ACEPTACIÓN DE TÉRMINOS </H2>
+        <P>El usuario acepta los términos y condiciones aquí establecidos</P>
+    
+        <form id="miFormulario" onsubmit="return validarTerminos()">
+            <!-- Otros campos del formulario -->
+            <label for="terminos">
+                <input type="checkbox" id="terminos"> Acepto los <a href="#">términos y condiciones</a>
+            </label>
+            <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    
+        <script>
+            function validarTerminos() {
+                var checkBox = document.getElementById("terminos");
+                if (!checkBox.checked) {
+                    alert("Debes aceptar los términos y condiciones para continuar.");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </div>
+    <a href="terminos.html">Regresar</a>
+</body>
+</html>

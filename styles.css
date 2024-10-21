@@ -1,0 +1,120 @@
+body {
+    background: url(images/fondo.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #000; 
+    padding: 15px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+    width: 100%;
+}
+
+.navbar a {
+    padding: 14px 30px; 
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px; 
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #00509E; 
+    color: #fff;
+}
+
+.info-container {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    border: 5px solid blue;
+    animation: borderChange 15s infinite;
+    width: 80%; 
+    max-width: 500px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); 
+}
+
+@keyframes borderChange {
+    0%, 20% { border-color: #003366; }
+    20%, 40% { border-color: #00509E; }
+    40%, 60% { border-color: #007BFF; }
+    60%, 80% { border-color: #66A3FF; }
+    80%, 100% { border-color: #99CCFF; }
+}
+
+h1, h2, h3, label {
+    color: #003366;
+    animation: titleColorChange 15s infinite;
+}
+
+@keyframes titleColorChange {
+    0%, 20% { color: #003366; }
+    20%, 40% { color: #00509E; }
+    40%, 60% { color: #007BFF; }
+    60%, 80% { color: #66A3FF; }
+    80%, 100% { color: #99CCFF; }
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+    margin: 20px 0;
+}
+
+.gallery div {
+    text-align: center;
+    width: 200px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.info-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: block;
+    width: 100%;
+}
+
+.info-button:hover {
+    background-color: #575757;
+}
+
+.description {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
